@@ -1,0 +1,295 @@
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-active);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    max-width: 300px;
+    align-items: center;
+}
+
+.stand-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    padding-top: 28px;
+}
+
+.stand-box__products {
+    position: absolute;
+    display: grid;
+    grid-template-rows: calc(114.06px + 11.954px) 84.51px 93.87px;
+    align-items: flex-end;
+    align-content: space-between;
+    max-height: calc(308.13px + 11.954px);
+    height: 100%;
+    width: 100%;
+    max-width: 198.565px;
+    justify-items: center;
+}
+
+.stand-box__products__line {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.stand-box__products__line_first {
+    margin-top: -3px;
+    margin-bottom: 2.63px;
+}
+
+.stand-box__products__line_second {
+    margin-bottom: -4.61px;
+}
+
+.stand-box__products__line_third {
+    margin-bottom: 2.55px;
+    gap: 10px;
+}
+
+/* Draggable Elements */
+.draggable {
+    cursor: move;
+}
+
+/* Specific Draggable Item Sizes */
+.draggable-1, .draggable-2, .draggable-3,
+.draggable-4, .draggable-5, .draggable-6,
+.draggable-7, .draggable-8, .draggable-9,
+.draggable-10, .draggable-11 {
+    margin-left: 5px;
+}
+
+.draggable-1 {
+    width: 37px;
+    height: 124.12px;
+    margin-left: 15.6px;
+}
+
+.draggable-2 {
+    width: 37px;
+    height: 90.73px;
+}
+
+.draggable-3 {
+    width: 46px;
+    height: 41.34px;
+}
+
+.draggable-4 {
+    width: 36.2px;
+    height: 34.38px;
+    margin-left: 9px;
+}
+
+.draggable-5 {
+    width: 49px;
+    height: 48.76px;
+    margin-left: 2.88px;
+    margin-bottom: 4.93px;
+    transform: rotate(5.64deg);
+}
+
+.draggable-6 {
+    width: 54.47px;
+    height: 49.85px;
+    margin-left: 5.26px;
+    margin-bottom: -2px;
+    transform: rotate(15.06deg);
+}
+
+.draggable-7 {
+    width: 76.17px;
+    height: 46.98px;
+    margin-left: 11px;
+}
+
+.draggable-8 {
+    width: 35px;
+    height: 74.08px;
+}
+
+.draggable-9 {
+    width: 47px;
+    height: 47.41px;
+    margin-bottom: 5.57px;
+}
+
+.draggable-10 {
+    width: 31px;
+    height: 35.99px;
+    margin-bottom: 5.99px;
+}
+
+.draggable-11 {
+    width: 61.74px;
+    height: 50.98px;
+}
+
+/* Dropzone */
+.dropzone {
+    width: 100%;
+    max-width: 160px;
+    height: 124px;
+    margin-top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 30px;
+
+    margin-left: 30px;
+}
+
+.dropzone.over {
+    /* Styles for when dropzone is active */
+}
+
+.dropzone .draggable {
+    transform: scale(1.45);
+    margin: 0;
+}
+
+/* Specific Dropzone Item Styles */
+.dropzone .draggable-1 {
+    transform: scale(1.3);
+    margin-bottom: 2px;
+}
+
+.dropzone .draggable-2 {
+    margin-bottom: 4px;
+}
+
+.dropzone .draggable-3 {
+    margin-bottom: -10px;
+    transform: scale(1.1);
+}
+
+.dropzone .draggable-4 {
+    transform: scale(1.5) rotate(10deg);
+    margin-bottom: -7px;
+}
+
+.dropzone .draggable-5,
+.dropzone .draggable-6 {
+    transform: scale(1.55) rotate(180deg);
+}
+
+.dropzone .draggable-7,
+.dropzone .draggable-11 {
+    position: absolute;
+    left: 60%;
+}
+
+.dropzone .draggable-9 {
+    transform: scale(1.55) rotate(-30deg);
+}
+
+.dropzone .draggable-11 {
+    transform: scale(1.55) rotate(-100deg);
+}
+
+/* Stand and Cart Images */
+.stand-box__stand {
+    max-height: 431.35px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.stand-box__cart {
+    max-width: 276.08px;
+    position: absolute;
+    bottom: -158px;
+    z-index: 10;
+    user-select: none;
+    pointer-events: none;
+    left: -73px;
+}
+
+/* Button */
+/* Button */
+.content__btn {
+    border-radius: 16px;
+    background: #FCE000;
+    padding: 12px 18px;
+    color: #21201F;
+    font-family: "YS Text";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.08px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 10;
+    min-height: 56px;
+    width: 100%;
+    max-width: 174px;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/* Visibility */
+.content__btn.visible {
+    opacity: 1;
+    animation: shadowPulse 1.5s infinite ease-in-out;
+    /* Shadow pulse animation */
+}
+
+/* Shadow Pulse Animation */
+@keyframes shadowPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(252, 224, 0, 0.7);
+        /* Initial shadow */
+    }
+
+    50% {
+        box-shadow: 0 0 15px 10px rgba(252, 224, 0, 0);
+        /* Expanded shadow */
+    }
+}
+
+.content__btn:hover {
+    animation: none;
+    /* transform: scale(1.05); */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(252, 224, 0, 0.6);
+}
+
+.content__btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
